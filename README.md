@@ -4,21 +4,38 @@ Welcome to the official repository for the **IISER Mohali Merchandise Preference
 
 This project provides an open-access, empirical data processing and analysis pipeline designed to understand student merchandise preferences. By analyzing quantitative choices and qualitative community feedback, this framework eliminates guesswork, mitigates financial risk for campus clubs and fest committees, and provides actionable guidelines for designing high-demand merchandise.
 
+An interactive web visualization is included to browse survey responses, charts, guidelines, and an exhaustive question-by-question statistical review.
+
 ---
 
 ## 1. Project & Repository Structure
 
 ```text
 merch-preference-survey-2026/
+├── assets/
+│   └── charts/                            # High-resolution generated charts (PNG)
+│       ├── demographics.png               # Batch and field distribution chart
+│       ├── category_demand.png            # Merchandise category interest ranking
+│       ├── apparel_design_matrix.png      # Placement preference matrix (Front/Back/Sleeve)
+│       ├── sweatshirt_pricing_wtp.png     # Hoodie & sweatshirt price corridor
+│       ├── decision_drivers.png           # Purchasing decision driver ratings
+│       └── themes_ranking.png             # Preferred design themes chart
 ├── data/
-│   └── iiserm_merch_survey_data.csv       # Anonymized primary survey responses (N=55)
+│   ├── iiserm_merch_survey_data.csv       # Anonymized primary survey responses (N=55)
+│   ├── survey_data.json                   # Exported dataset for web explorer
+│   └── question_analysis.json             # Exhaustive question-by-question statistical export
 ├── src/
 │   ├── __init__.py                        # Package initialization
 │   ├── data_preprocessing.py              # Data cleaning, multi-select parsing, Likert encoding
 │   ├── demographic_analysis.py            # Academic batch, discipline, and purchase volume analysis
 │   ├── merch_preference_analysis.py       # Category demand rankings & unreleased product gap extraction
 │   ├── apparel_analysis.py                # Fabric, fit, size, design matrix & pricing WTP evaluation
-│   └── consumer_psychology_analysis.py    # Purchasing decision drivers, brand loyalty & theme metrics
+│   ├── consumer_psychology_analysis.py    # Purchasing decision drivers, brand loyalty & theme metrics
+│   └── question_by_question_analysis.py   # Detailed Q&A breakdown module for all survey questions
+├── index.html                             # Responsive, mobile-first GitHub Pages web interface
+├── styles.css                             # Clean CSS with YouTube dark grey theme & typography
+├── app.js                                 # Client JS for theme toggle, hash routing & filtering
+├── generate_charts.py                     # Matplotlib chart generator script
 ├── run_analysis.py                        # Master pipeline script executing full statistical evaluation
 ├── merch_survey_blank_form.pdf            # Reference copy of the original survey questionnaire
 ├── merch_survey_mail.pdf                  # Reference copy of the campus-wide announcement mail
@@ -32,7 +49,7 @@ merch-preference-survey-2026/
 
 ---
 
-## 2. Environment Setup
+## 2. Environment Setup & Local Preview
 
 This repository uses [`uv`](https://github.com/astral-sh/uv) for fast, deterministic dependency management, but supports standard `pip` as well.
 
@@ -47,6 +64,9 @@ uv sync
 
 # Run the master analysis script
 uv run python3 run_analysis.py
+
+# Generate chart assets
+uv run python3 generate_charts.py
 ```
 
 ### Option B: Using Standard Python `venv` & `pip`
@@ -60,7 +80,17 @@ pip install -r requirements.txt
 
 # Run the master analysis script
 python3 run_analysis.py
+
+# Generate chart assets
+python3 generate_charts.py
 ```
+
+### Launching Local Web Application
+To preview the interactive web dashboard locally:
+```bash
+python3 -m http.server 8000
+```
+Open **[http://localhost:8000](http://localhost:8000)** in any modern desktop or mobile browser.
 
 ---
 
@@ -97,6 +127,12 @@ The survey dataset was processed using a multi-stage data science pipeline desig
        +-----------------------------------------------+
        |             Master Output Pipeline            |
        |               (run_analysis.py)               |
+       +-----------------------+-----------------------+
+                               |
+                               v
+       +-----------------------------------------------+
+       |         Web Visualization Dashboard           |
+       |       (index.html / app.js / styles.css)      |
        +-----------------------------------------------+
 ```
 
@@ -159,6 +195,17 @@ To compute meaningful central tendency and dispersion metrics (Mean score $\mu$ 
 
 ---
 
-## 6. License & Open Access
+## 6. Web Application & Dashboard Features
+
+The repository includes a web interface built with vanilla HTML5, CSS3, and modern JavaScript:
+
+* **Dark Grey YouTube Palette:** Follows YouTube dark theme standards (`#0f0f0f` background, `#272727` borders, `#3ea6ff` accent).
+* **Mobile-First Responsive Layout:** Features peeking tab scroll affordances, horizontal scroll chevrons (`›`), and justified text.
+* **Detailed Question Review Tab (`#detailed`):** Provides question-by-question statistical breakdowns, response distributions, and key insights.
+* **Floating Accessibility Widget:** Supports instant theme toggling and font size adjustments (`A-`, `Reset`, `A+`) with `localStorage` memory.
+
+---
+
+## 7. License & Open Access
 
 This project and dataset are distributed under the [MIT License](LICENSE) for the benefit of all clubs, committees, and student sub-bodies at IISER Mohali.
