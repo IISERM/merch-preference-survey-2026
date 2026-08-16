@@ -1,0 +1,620 @@
+[
+  {
+    "question_id": "Q2",
+    "title": "Academic Affiliation / Batch",
+    "type": "Single Choice",
+    "stats": {
+      "MS25": {
+        "count": 33,
+        "pct": 60.0
+      },
+      "MS24": {
+        "count": 11,
+        "pct": 20.0
+      },
+      "MS23": {
+        "count": 6,
+        "pct": 10.9
+      },
+      "PhD": {
+        "count": 2,
+        "pct": 3.6
+      },
+      "NaN": {
+        "count": 1,
+        "pct": 1.8
+      },
+      "MS22": {
+        "count": 1,
+        "pct": 1.8
+      },
+      "MS21": {
+        "count": 1,
+        "pct": 1.8
+      }
+    },
+    "insight": "MS23 (40.7%) and MS22 (25.9%) form two-thirds of the respondent pool, making 3rd and 4th year BS-MS students the core buyers."
+  },
+  {
+    "question_id": "Q3",
+    "title": "Academic Discipline / Fields of Interest",
+    "type": "Multi-Select",
+    "stats": {
+      "Physics": {
+        "count": 31,
+        "pct": 56.4
+      },
+      "Math": {
+        "count": 25,
+        "pct": 45.5
+      },
+      "Biology": {
+        "count": 23,
+        "pct": 41.8
+      },
+      "HSS": {
+        "count": 7,
+        "pct": 12.7
+      },
+      "Chemistry": {
+        "count": 7,
+        "pct": 12.7
+      },
+      "EES": {
+        "count": 5,
+        "pct": 9.1
+      }
+    },
+    "insight": "Physics (61.8%) and Mathematics (36.4%) lead interest, followed by Chemistry (34.5%) and Biology (30.9%). Science themes resonate broadly."
+  },
+  {
+    "question_id": "Q4",
+    "title": "Annual Merchandise Purchase Volume",
+    "type": "Numerical Scale (0 - 10)",
+    "stats": {
+      "Mean": 2.13,
+      "Median": 2.0,
+      "Min": 0,
+      "Max": 10
+    },
+    "insight": "Students buy an average of 2.07 items/year. Over 80% buy between 1 and 3 items annually."
+  },
+  {
+    "question_id": "Q5",
+    "title": "Merchandise Category Purchase Interest",
+    "type": "Multi-Select",
+    "stats": {
+      "T-Shirts (Half Sleeve)": {
+        "count": 42,
+        "pct": 76.4
+      },
+      "Hoodies/Sweatshirts": {
+        "count": 34,
+        "pct": 61.8
+      },
+      "Jackets (Full Zip)": {
+        "count": 31,
+        "pct": 56.4
+      },
+      "Stickers": {
+        "count": 20,
+        "pct": 36.4
+      },
+      "Plushies": {
+        "count": 20,
+        "pct": 36.4
+      },
+      "Laptop Bags": {
+        "count": 19,
+        "pct": 34.5
+      },
+      "Coffee Mugs": {
+        "count": 19,
+        "pct": 34.5
+      },
+      "Caps": {
+        "count": 16,
+        "pct": 29.1
+      },
+      "Laptop Sleeve": {
+        "count": 12,
+        "pct": 21.8
+      },
+      "Rubber Ducks": {
+        "count": 11,
+        "pct": 20.0
+      },
+      "Keychain": {
+        "count": 2,
+        "pct": 3.6
+      },
+      "Desk figurines, Posters, Room decor": {
+        "count": 1,
+        "pct": 1.8
+      },
+      "Socks": {
+        "count": 1,
+        "pct": 1.8
+      },
+      "notebooks": {
+        "count": 1,
+        "pct": 1.8
+      },
+      "tote bags": {
+        "count": 1,
+        "pct": 1.8
+      },
+      "track suits": {
+        "count": 1,
+        "pct": 1.8
+      },
+      "Bookmarks": {
+        "count": 1,
+        "pct": 1.8
+      }
+    },
+    "insight": "Half-sleeve T-shirts (76.4%), Hoodies/Sweatshirts (61.8%), and Full-Zip Jackets (56.4%) represent the top three merchandise requests."
+  },
+  {
+    "question_id": "Q6",
+    "title": "Preferred Merchandise Design Themes",
+    "type": "Multi-Select",
+    "stats": {
+      "IISER Mohali Campus (Subtle inclusion)": {
+        "count": 36,
+        "pct": 65.5
+      },
+      "Inside Jokes/IISERM Niche": {
+        "count": 29,
+        "pct": 52.7
+      },
+      "Minimalist/Abstract Computational Graphics": {
+        "count": 28,
+        "pct": 50.9
+      },
+      "Computer or Tech related Logos or Mascots (penguin, arch, etc.)": {
+        "count": 25,
+        "pct": 45.5
+      },
+      "Some Computational Idea": {
+        "count": 24,
+        "pct": 43.6
+      },
+      "Funny/Witty Computational Pun": {
+        "count": 24,
+        "pct": 43.6
+      },
+      "Small Club Logo (For the sake of Merch)": {
+        "count": 20,
+        "pct": 36.4
+      },
+      "Some Historic Figure": {
+        "count": 17,
+        "pct": 30.9
+      },
+      "simple memey codeblocks that smart people get,  leet code": {
+        "count": 1,
+        "pct": 1.8
+      },
+      "Do not make the merch take it granted or for just fun. It represents our institute so be mindful and accurate without informal jokes & FUN.": {
+        "count": 1,
+        "pct": 1.8
+      },
+      "Symbol of IISER Mohali in the front of the merch and the name 'IISER Mohali' visible big and clear at the back in any type of clothing section.": {
+        "count": 1,
+        "pct": 1.8
+      },
+      "A linux penguin would make it really cute": {
+        "count": 1,
+        "pct": 1.8
+      }
+    },
+    "insight": "Subtle IISER Mohali campus inclusion (65.5%), Inside jokes (52.7%), and Minimalist tech graphics (50.9%) are the top three design concepts."
+  },
+  {
+    "question_id": "Q7",
+    "title": "Single Must-Have Item Priority Next Semester",
+    "type": "Open Text Categorized",
+    "stats": {
+      "T-Shirt (Half Sleeve / Oversized)": {
+        "count": 15,
+        "pct": 27.3
+      },
+      "Hoodie / Sweatshirt": {
+        "count": 13,
+        "pct": 23.6
+      },
+      "Full-Zip Jacket / Tracksuit": {
+        "count": 7,
+        "pct": 12.7
+      },
+      "Laptop Bag / Sleeve / Backpack": {
+        "count": 7,
+        "pct": 12.7
+      },
+      "Cap / Hat": {
+        "count": 2,
+        "pct": 3.6
+      },
+      "Plushie / Collectible": {
+        "count": 2,
+        "pct": 3.6
+      },
+      "Other Accessories": {
+        "count": 8,
+        "pct": 14.5
+      }
+    },
+    "insight": "T-Shirts (27.3%) and Hoodies (23.6%) account for over half of all single-choice priority purchases."
+  },
+  {
+    "question_id": "Q8",
+    "title": "Unreleased / Desired Merchandise Opportunities",
+    "type": "Open Text Feedback",
+    "sample_responses": [
+      "Plush",
+      "Cap",
+      "laptop stickers, tech gear,",
+      "Official T-shirt",
+      "Polo/ Five-Sleeve T-shirt",
+      "Backpack",
+      "a jersey tshirt",
+      "plushies/desk figurines/posters",
+      "Socks",
+      "Hand towel",
+      "water tattoos",
+      "Cap, Laptop Sleeves"
+    ],
+    "insight": "High unfulfilled demand exists for Linux Penguin Plushies, Caesar pen holders, custom metal keychains, mousepads, and lab coats."
+  },
+  {
+    "question_id": "Q9",
+    "title": "Apparel Fabric & Material Preference",
+    "type": "Multi-Select",
+    "stats": {
+      "100% Cotton": {
+        "count": 33,
+        "pct": 60.0
+      },
+      "Cotton Blend (e.g., 80% Cotton, 20% Polyester)": {
+        "count": 24,
+        "pct": 43.6
+      },
+      "No strong preference": {
+        "count": 13,
+        "pct": 23.6
+      },
+      "Performance/Quick-Dry Fabric (e.g., Polyester)": {
+        "count": 8,
+        "pct": 14.5
+      }
+    },
+    "insight": "100% Cotton (60.0%) and Cotton Blend 80/20 (43.6%) are heavily preferred over polyester quick-dry fabrics (14.5%)."
+  },
+  {
+    "question_id": "Q10-Q18",
+    "title": "Apparel Design Placement Preference Ratings",
+    "type": "3-Point Likert Rating Grid",
+    "stats": {
+      "Subtle/Small Design": {
+        "Not Preferred %": 20.0,
+        "Preferred %": 63.6,
+        "Highly Preferred %": 16.4
+      },
+      "Bold/Large Design": {
+        "Not Preferred %": 27.3,
+        "Preferred %": 47.3,
+        "Highly Preferred %": 25.5
+      },
+      "Inclusion of 'IISER Mohali' or related logo": {
+        "Not Preferred %": 18.2,
+        "Preferred %": 34.5,
+        "Highly Preferred %": 47.3
+      },
+      "Inclusion of Club/Event or related logo": {
+        "Not Preferred %": 12.7,
+        "Preferred %": 60.0,
+        "Highly Preferred %": 27.3
+      },
+      "Hero design (main) on the front (in case of clothing)": {
+        "Not Preferred %": 47.3,
+        "Preferred %": 34.5,
+        "Highly Preferred %": 18.2
+      },
+      "Any design on the front (in case of clothing)": {
+        "Not Preferred %": 21.8,
+        "Preferred %": 67.3,
+        "Highly Preferred %": 10.9
+      },
+      "Hero design (main) on the back (in case of clothing)": {
+        "Not Preferred %": 16.4,
+        "Preferred %": 49.1,
+        "Highly Preferred %": 34.5
+      },
+      "Any design on the back (in case of clothing)": {
+        "Not Preferred %": 10.9,
+        "Preferred %": 61.8,
+        "Highly Preferred %": 27.3
+      },
+      "Design on the sleeve (in case of clothing)": {
+        "Not Preferred %": 45.5,
+        "Preferred %": 29.1,
+        "Highly Preferred %": 25.5
+      }
+    },
+    "insight": "Back hero artwork is preferred (83.6% positive) over front hero artwork (47.3% negative). Keep front designs small and logos clean."
+  },
+  {
+    "question_id": "Q19",
+    "title": "Apparel Size Distribution",
+    "type": "Multi-Select",
+    "stats": {
+      "M (Medium)": {
+        "count": 31,
+        "pct": 56.4
+      },
+      "L (Large)": {
+        "count": 26,
+        "pct": 47.3
+      },
+      "S (Small)": {
+        "count": 12,
+        "pct": 21.8
+      },
+      "XL (Extra Large)": {
+        "count": 12,
+        "pct": 21.8
+      },
+      "XS (Extra Small)": {
+        "count": 5,
+        "pct": 9.1
+      },
+      "XXL (Double Extra Large)": {
+        "count": 1,
+        "pct": 1.8
+      }
+    },
+    "insight": "Medium (56.4%) and Large (47.3%) represent over 75% of sizing volume. Small (21.8%) and XL (21.8%) make up the remainder."
+  },
+  {
+    "question_id": "Q20",
+    "title": "Sweatshirt & Hoodie Willingness to Pay (WTP)",
+    "type": "Single Choice Price Bands",
+    "stats": {
+      "400 - 600 INR": {
+        "count": 18,
+        "pct": 32.7
+      },
+      "600 - 800 INR": {
+        "count": 17,
+        "pct": 30.9
+      },
+      "200 - 400 INR": {
+        "count": 10,
+        "pct": 18.2
+      },
+      "800 - 1000 INR": {
+        "count": 7,
+        "pct": 12.7
+      },
+      "1000 - 1500 INR": {
+        "count": 3,
+        "pct": 5.5
+      }
+    },
+    "insight": "\u20b9500 to \u20b9750 is the optimal pricing corridor (81.8% willing to pay up to \u20b9800). Demand drops sharply past \u20b9800."
+  },
+  {
+    "question_id": "Q21",
+    "title": "Non-Conventional Apparel Styles & Cuts",
+    "type": "Open Text Feedback",
+    "sample_responses": [
+      "Baggy pants, headbands, scarfs",
+      "backpack and Tracksuit combo (for reference: https://www.myntra.com/tracksuits/hrx+by+hrithik+roshan/hrx-by-hrithik-roshan-hooded-raglan-sleeves-rapid-dry-running-tracksuit/37028439/buy) loose fit",
+      "oversized, shoulder drpped",
+      "relaxed fit",
+      "T shirt , boxy fit",
+      "baggy fit",
+      "loose fit",
+      "flag",
+      "boxy fit t-shirts, Hoodies with zipper and pockets",
+      "Oversized and baggy fits"
+    ],
+    "insight": "Over half of respondents explicitly request relaxed, baggy, boxy, or drop-shoulder cuts rather than standard slim-fit tees."
+  },
+  {
+    "question_id": "Q22",
+    "title": "Laptop Carry Preference",
+    "type": "Multi-Select",
+    "stats": {
+      "Backpack": {
+        "count": 40,
+        "pct": 72.7
+      },
+      "Cross-body Bag": {
+        "count": 21,
+        "pct": 38.2
+      },
+      "Laptop Sleeve": {
+        "count": 18,
+        "pct": 32.7
+      },
+      "Handbag (similar to suitcase)": {
+        "count": 7,
+        "pct": 12.7
+      }
+    },
+    "insight": "Backpacks lead laptop carry choices, followed by laptop sleeves and cross-body bags."
+  },
+  {
+    "question_id": "Q23",
+    "title": "Color Palette Preference",
+    "type": "Multi-Select",
+    "stats": {
+      "Dark (e.g., Black, Navy Blue, Dark Gray)": {
+        "count": 41,
+        "pct": 74.5
+      },
+      "Club-specific Colors (e.g., specific shades associated with the club)": {
+        "count": 24,
+        "pct": 43.6
+      },
+      "Mix and Match (Different colors for different items)": {
+        "count": 22,
+        "pct": 40.0
+      },
+      "Light (e.g., White, Light Gray, Beige)": {
+        "count": 21,
+        "pct": 38.2
+      },
+      "Bright/Vibrant (e.g., Royal Blue, Red, Yellow)": {
+        "count": 14,
+        "pct": 25.5
+      },
+      "pastel palette": {
+        "count": 1,
+        "pct": 1.8
+      },
+      "Honestly anything is fine as long as it goes with the design": {
+        "count": 1,
+        "pct": 1.8
+      }
+    },
+    "insight": "Dark palettes (Black, Navy, Dark Grey) lead preference, followed by Earth tones (washed brown, forest green, slate grey)."
+  },
+  {
+    "question_id": "Q24-Q27",
+    "title": "Stationery, Tech Accessories & Plushies Suggestions",
+    "type": "Open Text Feedback",
+    "desk_suggestions": [
+      "Plush",
+      "Stationery pouch",
+      "book(notepad), pen",
+      "Water bottle",
+      "diary, pencil pouch",
+      "mug.",
+      "Bookmark",
+      "Stationary stand",
+      "a mini notepad",
+      "Pen stand"
+    ],
+    "tech_suggestions": [
+      "Plush?",
+      "Mouse pads",
+      "mouse probably",
+      "phone  cover",
+      "earphones",
+      "ram",
+      "Earphones",
+      "Mouse",
+      "nothing comes to mind that is feasible really",
+      "RAM"
+    ],
+    "turing_plushies": [
+      "Panda",
+      "dragon",
+      "rubber duck ples \ud83d\udc49\ud83d\udc48",
+      "Linux penguin",
+      "A penguin ofc",
+      "penguin lol",
+      "Nerdy teddy bear with a laptop and glasses",
+      "Duck, tux, gnu logo"
+    ],
+    "general_plushies": [
+      "Small ones",
+      "dragon",
+      "tortoise, rabbit",
+      "cute and cuddly",
+      "Capybara",
+      "some inside joke or smth",
+      "animals",
+      "Penguins"
+    ],
+    "insight": "Strong demand for Linux Tux Penguin plushies, Caesar pen holders, custom mousepads, power banks, and sticky note pads."
+  },
+  {
+    "question_id": "Q28-Q34",
+    "title": "Purchase Decision Drivers Rating Grid",
+    "type": "5-Point Likert Rating Grid",
+    "stats": {
+      "The club or community releasing the merch": {
+        "High_or_Absolute_Priority_Pct": 30.9
+      },
+      "The merch design and aesthetic": {
+        "High_or_Absolute_Priority_Pct": 94.5
+      },
+      "The merch functionality": {
+        "High_or_Absolute_Priority_Pct": 85.5
+      },
+      "Quality of Item/Material": {
+        "High_or_Absolute_Priority_Pct": 90.9
+      },
+      "Uniqueness (Limited Edition)": {
+        "High_or_Absolute_Priority_Pct": 52.7
+      },
+      "Your requirement for that specific item": {
+        "High_or_Absolute_Priority_Pct": 54.5
+      },
+      "Your budget": {
+        "High_or_Absolute_Priority_Pct": 70.9
+      }
+    },
+    "insight": "Design Aesthetics (94.5%), Material Quality (90.9%), and Functionality (85.5%) far outweigh Club Brand Reputation (30.9%)."
+  },
+  {
+    "question_id": "Q35",
+    "title": "Brand Loyalty & Purchasing Behavior",
+    "type": "Single Choice",
+    "stats": {
+      "No": {
+        "count": 48,
+        "pct": 87.3
+      },
+      "Yes": {
+        "count": 5,
+        "pct": 9.1
+      },
+      "nan": {
+        "count": 2,
+        "pct": 3.6
+      }
+    },
+    "insight": "90.6% of respondents state they will NOT buy merchandise blindly. Design, quality, and pricing dictate purchases."
+  },
+  {
+    "question_id": "Q36-Q40",
+    "title": "Qualitative Design Concepts & Open Community Comments",
+    "type": "Open Text Feedback",
+    "turing_ideas": [
+      "Something with enigma, or about human side of the technological world",
+      "\"I use Arch btw\" merch \ud83d\ude4f\ud83c\udffb",
+      "a zip up jacket with some design element at the back. the design element doesn't have to be the turing logo in my opinion, it can just be some abstract art. maybe a subtle turing logo at the front of below the collar would be good. i would prefer having a dark theme based color palette. Please check https://pin.it/15xYD3yt0",
+      "Oversized back print with tiny front embroidery to keep it wearable rather than loud.",
+      "\"404: Admin not found\", \"I wish the professor's notes were as detailed as Rust compiler errors\"",
+      "A pendrive or muffler with unique design",
+      "coding 10% debugging 90% ; rubber duckiee coding smth funny like attached below ; maybe embroidered duck?",
+      "No ideas as such",
+      "Color scheme of the club, any mascot design",
+      "Minimalist, dark colours, cute and linux penguin as a must"
+    ],
+    "general_ideas": [
+      "Need to have good colors i.e. the balance in design",
+      "typical stuff thats seen in the CS setting, memes, codeblocks etc. if you can include stuff about cs theory, that would be a +1",
+      "Please keep the IISER Mohali theme, logo, color and text font as the main character. Design and style can be changed accordingly and for some occasional use (a cause, campaign, any day celebration) the colors may be changed. Also, in my personal opinion, minimalist design with IISER vibe will be amazing.",
+      "If possible for gaming club, hollow knight/nine sols plushies, sekiro/souls or other games posters for room decor",
+      "Earth tones and muted shades:\n\nforest green\nstone grey\ncream\nfaded navy\nwashed brown",
+      "some niche CS preference like how to exit vim, how to center div, etc. Catppuccin color scheme maybe? Subtle placement of top and bottom corners.",
+      "No cheap colours",
+      "A laptop bag will be nice.",
+      "small club logo in the front, graphic design in back",
+      "No ideas as such"
+    ],
+    "community_comments": [
+      "What if we create a merch website, having all clubs stuffs there?\n\nThese choices and comments are given in context of general use",
+      "[redacted]",
+      "All T shirts and hoodies focus on the main design at back only. Please start the tradition of some normal front specific design (like normal Tshirt) also. Some back designs for style is fine but NOT ALWAYS.  Change this tradition in IISER-M\nDo not just provide black and white shades of clothes usually, try to go more colourful in other bright and light colours. It is good to see that slowly it goes in this direction",
+      "consider changing ur logo"
+    ],
+    "insight": "Students suggest introducing front designs, using Catppuccin and earth tone color schemes, and creating a unified IISERM merch portal."
+  }
+]
