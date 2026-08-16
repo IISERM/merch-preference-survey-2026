@@ -3,7 +3,7 @@
 Master Execution Script: IISER Mohali Merchandise Preference Survey 2026 Analysis.
 
 Runs the complete data processing, demographic profiling, apparel specification matrix,
-purchasing decision driver analysis, and qualitative theme extraction pipeline.
+purchasing decision driver analysis, and question-by-question detailed breakdown.
 """
 
 import os
@@ -17,6 +17,7 @@ from src.demographic_analysis import analyze_demographics
 from src.merch_preference_analysis import analyze_merchandise_preferences
 from src.apparel_analysis import analyze_apparel
 from src.consumer_psychology_analysis import analyze_consumer_psychology
+from src.question_by_question_analysis import analyze_all_questions
 
 
 def main():
@@ -71,10 +72,7 @@ def main():
     print(apparel_res['apparel_matrix_df'].to_string(index=False))
     print("\nSweatshirt / Hoodie Willingness to Pay (WTP):")
     print(apparel_res['wtp_df'].to_string())
-    print("\nFit & Cut Requests (Sample):")
-    for req in apparel_res['fit_requests'][:8]:
-        print(f"  • {req}")
-        
+    
     # 5. Consumer Psychology & Decision Drivers
     psych_res = analyze_consumer_psychology(df_raw, decision_factors)
     print("\n\n[4] CONSUMER PSYCHOLOGY & PURCHASING DECISION DRIVERS")
@@ -86,6 +84,18 @@ def main():
     print("\nDesign Theme Ranking:")
     print(psych_res['themes_df'].to_string())
     
+    # 6. Detailed Question-by-Question Breakdown
+    print("\n\n[5] DETAILED QUESTION-BY-QUESTION BREAKDOWN & INSIGHTS")
+    print("-" * 60)
+    q_analysis = analyze_all_questions(df_raw)
+    for item in q_analysis:
+        print(f"\n--- [{item['question_id']}] {item['title']} ({item['type']}) ---")
+        if 'stats' in item:
+            for k, v in item['stats'].items():
+                print(f"  • {k}: {v}")
+        if 'insight' in item:
+            print(f"  >> Insight: {item['insight']}")
+
     print("\n" * 2)
     print("=" * 80)
     print("END OF STATISTICAL REPORT")
