@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IISER Mohali Merchandise Survey Results 2026</title>
+  <meta name="description" content="Community merchandise survey preferences and guidelines compiled by Turing Club.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Clean Header with Compact Theme Toggle -->
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>IISER Mohali Merchandise Survey Results</h1>
+          <p>A study conducted by <strong>Turing Club</strong> to guide merchandise design and pricing for campus communities.</p>
+        </div>
+        <button id="themeToggleBtn" class="icon-toggle-btn" onclick="toggleTheme()" aria-label="Toggle Theme">🌙</button>
+      </div>
+    </header>
+
+    <!-- Stat Summary Row -->
+    <div class="stats-summary-row">
+      <div class="stat-item">
+        <div class="stat-number">55</div>
+        <div class="stat-label">Survey Respondents</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">76%</div>
+        <div class="stat-label">Prefer T-Shirts</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">62%</div>
+        <div class="stat-label">Prefer T-shirt/Hoodies</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">₹500–750</div>
+        <div class="stat-label">Ideal Hoodie Price</div>
+      </div>
+    </div>
+
+    <!-- Sticky Nav with Horizontal Scroll Affordance Cue -->
+    <div id="navWrapper" class="nav-scroll-wrapper">
+      <nav id="navBar" class="nav-bar">
+        <button id="nav-summary" class="nav-btn active" onclick="switchTab('summary')">Summary</button>
+        <button id="nav-detailed" class="nav-btn" onclick="switchTab('detailed')">Detailed Review</button>
+        <button id="nav-charts" class="nav-btn" onclick="switchTab('charts')">Charts</button>
+        <button id="nav-guidelines" class="nav-btn" onclick="switchTab('guidelines')">Club Guidelines</button>
+        <button id="nav-explorer" class="nav-btn" onclick="switchTab('explorer')">Data Explorer</button>
+        <button id="nav-downloads" class="nav-btn" onclick="switchTab('downloads')">Downloads</button>
+      </nav>
+      <button id="navScrollArrow" class="nav-scroll-arrow" onclick="scrollNavRight()" aria-label="Scroll Tabs Right">›</button>
+    </div>
+
+    <!-- TAB 1: SUMMARY (#summary) -->
+    <section id="tab-summary" class="tab-content active">
+      <div class="section-block">
+        <h2>Survey Summary & Key Findings</h2>
+        <p>The survey was conducted to understand community preferences for campus merchandise. The findings assist clubs in creating apparel that people want to wear while managing production costs.</p>
+
+        <h3>Main Findings</h3>
+        <ul>
+          <li><strong>Design and Quality Matter Most:</strong> 91% of respondents judge merchandise by its design, fabric quality, and comfort rather than which club releases it. Most respondents evaluate each item individually.</li>
+          <li><strong>Back Print Preference:</strong> 84% of respondents prefer the main graphic or logo to be placed on the <strong>back</strong> of clothing. Front prints should remain small and subtle.</li>
+          <li><strong>Oversized Fit Demand:</strong> Over half of text feedback requested relaxed, baggy, or oversized fits instead of standard tight cuts.</li>
+          <li><strong>T-shirt/Hoodie Pricing:</strong> 82% of respondents are willing to pay up to ₹800 for a sweatshirt or T-shirt/hoodie. Pricing above ₹800 significantly reduces potential buyers.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TAB 2: DETAILED QUESTION-BY-QUESTION REVIEW (#detailed) -->
+    <section id="tab-detailed" class="tab-content">
+      <div class="section-block">
+        <h2>Question-by-Question Detailed Review & Insights</h2>
+        <p>An exhaustive analysis of all survey questions, detailing response percentages, statistics, and actionable takeaways for each question.</p>
+        
+        <div id="detailedQuestionsContainer">
+          <p>Loading detailed question analysis...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: CHARTS (#charts) -->
+    <section id="tab-charts" class="tab-content">
+      <div class="section-block">
+        <h2>Visual Charts & Survey Data</h2>
+        
+        <h3>1. Respondent Batches & Fields</h3>
+        <div class="chart-box">
+          <img src="assets/charts/demographics.png" alt="Demographics and Fields of Study Chart" loading="lazy">
+          <p class="chart-caption">Distribution of survey participants across batches and academic fields.</p>
+        </div>
+
+        <h3>2. Merchandise Category Demand</h3>
+        <div class="chart-box">
+          <img src="assets/charts/category_demand.png" alt="Merchandise Category Interest Level Chart" loading="lazy">
+          <p class="chart-caption">Percentage of respondents interested in purchasing specific merchandise categories.</p>
+        </div>
+
+        <h3>3. Clothing Design Placement Preference</h3>
+        <div class="chart-box">
+          <img src="assets/charts/apparel_design_matrix.png" alt="Apparel Design Placement Preference Chart" loading="lazy">
+          <p class="chart-caption">Comparison of placement preferences (1 = Not Preferred, 3 = Highly Preferred).</p>
+        </div>
+
+        <h3>4. T-shirt/Hoodie Price Corridor</h3>
+        <div class="chart-box">
+          <img src="assets/charts/sweatshirt_pricing_wtp.png" alt="Sweatshirt Pricing WTP Distribution Chart" loading="lazy">
+          <p class="chart-caption">Willingness to pay distribution for T-shirts, sweatshirts, and hoodies.</p>
+        </div>
+
+        <h3>5. Purchasing Factors</h3>
+        <div class="chart-box">
+          <img src="assets/charts/decision_drivers.png" alt="Purchase Decision Drivers Chart" loading="lazy">
+          <p class="chart-caption">Importance ratings for design, quality, functionality, budget, and club brand.</p>
+        </div>
+
+        <h3>6. Design Theme Preferences</h3>
+        <div class="chart-box">
+          <img src="assets/charts/themes_ranking.png" alt="Preferred Design Themes Chart" loading="lazy">
+          <p class="chart-caption">Popularity of campus references, inside jokes, and minimalist tech graphics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: GUIDELINES (#guidelines) -->
+    <section id="tab-guidelines" class="tab-content">
+      <div class="section-block">
+        <h2>Recommendations for Clubs & Committees</h2>
+        
+        <div class="note-box">
+          <strong>1. Material & Silhouette</strong>
+          Use 100% Cotton (240+ GSM for T-shirts, 300+ GSM for T-shirt/hoodies). Offer oversized, drop-shoulder, or boxy fit options.
+        </div>
+
+        <div class="note-box">
+          <strong>2. Print Placement</strong>
+          Place main artwork on the back of clothing. Keep the front minimal with a small chest print or logo.
+        </div>
+
+        <div class="note-box">
+          <strong>3. Pricing Guidelines</strong>
+          T-Shirts: ₹350 – ₹500<br>
+          T-shirt/Hoodies & Sweatshirts: ₹550 – ₹750
+        </div>
+
+        <h3>High-Demand Niche Merchandise</h3>
+        <ul>
+          <li><strong>Penguin Plushies:</strong> High interest in Linux mascot plushies and soft desk toys.</li>
+          <li><strong>Metal Keychains:</strong> Durable keychains with hostel or club identifiers.</li>
+          <li><strong>Desk Accessories:</strong> Custom mousepads, pen holders, and field notebooks.</li>
+          <li><strong>Lab Apparel:</strong> Science-themed lab coats and aprons.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TAB 5: DATA EXPLORER (#explorer) -->
+    <section id="tab-explorer" class="tab-content">
+      <div class="section-block">
+        <h2>Survey Response Explorer</h2>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+          Search responses by keyword or filter by student batch.
+        </p>
+
+        <div class="filter-container">
+          <input type="text" id="searchQuery" class="search-input" placeholder="Search keyword (e.g. MS23, Plush, Oversized)..." onkeyup="filterResponses()">
+          <select id="batchFilterSelect" class="select-filter" onchange="filterResponses()">
+            <option value="">All Batches</option>
+            <option value="MS23">MS23</option>
+            <option value="MS22">MS22</option>
+            <option value="MS24">MS24</option>
+            <option value="MS25">MS25</option>
+            <option value="MS21">MS21</option>
+            <option value="PhD">PhD / Int-PhD</option>
+          </select>
+        </div>
+
+        <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 8px;" id="resultCount">Showing responses</div>
+
+        <!-- Mobile Card View -->
+        <div id="mobileCardsContainer" class="response-cards-list">
+          <div class="response-item-card">Loading survey data...</div>
+        </div>
+
+        <!-- Desktop Table View -->
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Batch</th>
+                <th>Fields</th>
+                <th>Buys/Yr</th>
+                <th>Top Merch Types</th>
+                <th>Sweatshirt/Hoodie Price</th>
+              </tr>
+            </thead>
+            <tbody id="desktopTableBody">
+              <tr><td colspan="6">Loading survey data...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 6: DOWNLOADS (#downloads) -->
+    <section id="tab-downloads" class="tab-content">
+      <div class="section-block">
+        <h2>Downloads & Code Repository</h2>
+        <p>Access the original survey data and GitHub project repository below.</p>
+
+        <div class="btn-group">
+          <a href="https://docs.google.com/spreadsheets/d/17MezQnA8Wwa5CHeoBHL9cKEy4KPGd6Ks--gQDxVi0_k/edit?usp=sharing" class="action-btn" target="_blank" rel="noopener">View Submitted Data (Google Sheets)</a>
+          <a href="data/iiserm_merch_survey_data.csv" class="action-btn" download>Download Raw CSV Data</a>
+          <a href="https://github.com/IISERM/merch-preference-survey-2026" class="action-btn" target="_blank" rel="noopener">GitHub Repository</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        <a href="https://github.com/IISERM/merch-preference-survey-2026" class="footer-link" target="_blank" rel="noopener">
+          <svg class="github-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          IISER Mohali Merchandise Survey 2026
+        </a>
+      </p>
+      <p>
+        <strong>
+          <a href="https://github.com/IISERM" class="footer-link" target="_blank" rel="noopener">Turing Club</a>
+        </strong>
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- Floating Accessibility Widget -->
+  <div class="a11y-widget">
+    <button class="a11y-toggle-btn" onclick="toggleA11yPanel()" aria-label="Accessibility Options">Aa</button>
+    <div id="a11yPanel" class="a11y-panel">
+      <div class="a11y-title">
+        <span>Settings</span>
+        <span style="cursor:pointer;" onclick="toggleA11yPanel()">✕</span>
+      </div>
+      <div class="a11y-row">
+        <button class="a11y-btn" onclick="toggleTheme()">Theme</button>
+      </div>
+      <div class="a11y-title" style="margin-top:6px;">Font Size</div>
+      <div class="a11y-row">
+        <button class="a11y-btn" onclick="changeFontSize(-1)">A-</button>
+        <button class="a11y-btn" onclick="resetFontSize()">Reset</button>
+        <button class="a11y-btn" onclick="changeFontSize(1)">A+</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
